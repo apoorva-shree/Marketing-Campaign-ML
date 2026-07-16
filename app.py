@@ -18,9 +18,9 @@ import pickle
 import xgboost as xgb
 import json
 
-MODEL_PATH = r"C:\Users\HP\OneDrive\Documents\Marketing campaign analysis\Model\model.json"
-FEATURES_PATH = r"C:\Users\HP\OneDrive\Documents\Marketing campaign analysis\Model\feature_names.json"
-ENCODER_PATH = r"C:\Users\HP\OneDrive\Documents\Marketing campaign analysis\Model\encoder.pkl"
+MODEL_PATH ="Model/model.json"
+FEATURES_PATH ="Model/feature_names.json"
+ENCODER_PATH ="Model/encoder.pkl"
 
 model = xgb.XGBClassifier()
 model.load_model(MODEL_PATH)
