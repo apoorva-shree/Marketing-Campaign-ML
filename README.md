@@ -313,7 +313,6 @@ streamlit run app.py
 
 # 📌 Future Improvements
 
-- Deploy the application using Streamlit Community Cloud.
 - Integrate real-time marketing campaign data.
 - Add model monitoring for production usage.
 
