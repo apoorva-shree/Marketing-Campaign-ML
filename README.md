@@ -263,53 +263,58 @@ The interactive dashboard enables users to:
 - XGBoost
 - SHAP
 - Streamlit
-- Pickle
+- Pickle (Encoder Serialization)
+- JSON (XGBoost Model & Feature Metadata)
 
 ---
 
-# 📂 Repository Structure
+## 📂 Repository Structure
 
 ```text
-marketing-campaign-conversion-prediction
+Marketing-Campaign-ML
 │
-├── app.py
-├── README.md
-├── requirements.txt
-├── .gitignore
-│
-├── model
-│   ├── model.pkl
-│   └── encoder.pkl
-│
-├── notebook
-│   └── Marketing_Campaign_Analysis.ipynb
-│
-├── data
+├── Dataset
 │   └── digital_marketing_campaign_dataset.csv
 │
-└── images
-    ├── dashboard.png
-    ├── confusion_matrix.png
-    ├── roc_curve.png
-    ├── feature_importance.png
-    └── correlation_heatmap.png
+├── Images
+│   ├── conversion_rate_by_age_group.png
+│   ├── conversion_rate_by_gender.png
+│   ├── correlation_heatmap.png
+│   ├── elbow_method.png
+│   ├── feature_importance.png
+│   ├── shap_feature_importance.png
+│   ├── shap_summary_plot.png
+│   └── shap_waterfall_plot.png
+│
+├── Model
+│   ├── model.json
+│   ├── encoder.pkl
+│   └── feature_names.json
+│
+├── Notebook
+│   └── Marketing_Campaign_Analysis.ipynb
+│
+├── app.py
+├── requirements.txt
+├── README.md
+└── .gitignore
 ```
 
 ---
-
-# ▶️ Installation
+## ▶️ Installation
 
 ```bash
-git clone https://github.com/your-username/marketing-campaign-conversion-prediction.git
+git clone https://github.com/apoorva-shree/Marketing-Campaign-ML.git
 
-cd marketing-campaign-conversion-prediction
+cd Marketing-Campaign-ML
 
 pip install -r requirements.txt
 
 streamlit run app.py
 ```
 
-## Live Link : https://marketing-campaign-ml-5qh2di2mtl863pdfc9zkrz.streamlit.app/
+**Live Demo:**  
+https://marketing-campaign-ml-5qh2di2mtl863pdfc9zkrz.streamlit.app/
 ---
 
 # 📌 Future Improvements
